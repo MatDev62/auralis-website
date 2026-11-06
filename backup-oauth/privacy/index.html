@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade — integração de backup (rclone)</title>
+<meta name="description" content="Política de privacidade da integração pessoal com o Google Drive usada nos backups privados do projeto Auralis.">
+<style>
+  :root { --bg: #f6f4ef; --fg: #1d1f24; --muted: #5d6270; --line: #d9d5cb; --accent: #2f5d62; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14161a; --fg: #e8e6e1; --muted: #9da2ad; --line: #2c3038; --accent: #8fc1c4; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { width: 100%; max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  header { padding-block: 1.5rem; border-bottom: 1px solid var(--line); }
+  header a { font-weight: 600; letter-spacing: .18em; text-transform: uppercase; font-size: .9rem; color: var(--fg); text-decoration: none; }
+  main { padding-block: 2.5rem 3rem; }
+  h1 { font-size: 1.9rem; font-weight: 400; margin: 0 0 .5rem; line-height: 1.25; }
+  .updated { color: var(--muted); margin: 0 0 2rem; font-size: .95rem; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .5rem; }
+  a { color: var(--accent); }
+  code { font-size: .92em; background: color-mix(in srgb, var(--line) 55%, transparent); padding: .05rem .35rem; border-radius: 4px; overflow-wrap: anywhere; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  footer { border-top: 1px solid var(--line); padding-block: 1.25rem; font-size: .85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="../../">Auralis</a></div></header>
+
+<main>
+  <div class="wrap">
+    <h1>Política de privacidade da integração de backup (aplicativo OAuth “rclone”)</h1>
+    <p class="updated">Última atualização: 6 de novembro de 2026</p>
+
+    <h2>1. A quem se aplica</h2>
+    <p>Esta política se aplica ao aplicativo OAuth “rclone” registrado pelo responsável pelo projeto Auralis. A integração é de uso pessoal e privado: é utilizada somente pelo próprio responsável, com a própria conta Google, e não é oferecida a outras pessoas.</p>
+
+    <h2>2. Dados do Google acessados</h2>
+    <p>A integração solicita apenas o escopo <code>https://www.googleapis.com/auth/drive.file</code>. Esse escopo dá acesso somente aos arquivos e pastas do Google Drive criados por este aplicativo, ou abertos e compartilhados explicitamente com ele. Os demais arquivos da conta não ficam acessíveis à integração.</p>
+
+    <h2>3. Como os dados são usados</h2>
+    <p>O acesso é usado exclusivamente para gravar, listar, ler e manter os arquivos de backup privados do projeto Auralis no Google Drive do responsável, por meio do programa Rclone executado no computador do responsável. Não há outra finalidade.</p>
+
+    <h2>4. Onde os dados ficam</h2>
+    <p>Os arquivos de backup ficam armazenados na conta Google Drive do próprio responsável. As credenciais de autorização ficam somente no computador em que o Rclone é executado. Nenhum dado do Google Drive é enviado a este site ou a servidores mantidos pelo projeto Auralis.</p>
+
+    <h2>5. Compartilhamento</h2>
+    <p>Os dados acessados pela integração não são vendidos, cedidos ou compartilhados com terceiros. Eles são processados apenas pelo Google, como provedor do Google Drive, e pelo Rclone em execução local.</p>
+
+    <h2>6. Remoção e revogação</h2>
+    <p>O responsável pode remover os arquivos de backup diretamente no Google Drive e revogar a autorização a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Após a revogação, a integração deixa de ter acesso à conta.</p>
+
+    <h2>7. Este site</h2>
+    <p>Este site é estático. Não usa formulários, cookies próprios nem ferramentas de análise de visitas. O serviço de hospedagem pode registrar dados técnicos de acesso conforme as políticas do próprio provedor.</p>
+
+    <h2>8. Alterações</h2>
+    <p>Mudanças nesta política serão publicadas nesta página, com a data de atualização.</p>
+
+    <h2>9. Contato</h2>
+    <p>Dúvidas sobre esta integração OAuth ou sobre esta política de privacidade podem ser enviadas para <a href="mailto:auralisgame@gmail.com">auralisgame@gmail.com</a>.</p>
+
+    <hr>
+
+    <h2 lang="en">English version</h2>
+    <div lang="en">
+      <p><strong>Scope of this policy.</strong> This policy covers the “rclone” OAuth application registered by the owner of the Auralis project. It is a personal, private integration used only by the owner, with the owner’s own Google account, and is not offered to anyone else.</p>
+      <p><strong>Google data accessed.</strong> The integration requests only <code>https://www.googleapis.com/auth/drive.file</code>, which gives access only to Google Drive files and folders created by, opened with, or explicitly shared with this application.</p>
+      <p><strong>Use.</strong> Access is used solely to write, list, read and maintain private backup files of the Auralis project in the owner’s Google Drive, through the Rclone program running on the owner’s computer.</p>
+      <p><strong>Storage.</strong> Backup files are stored in the owner’s Google Drive. Authorization credentials are kept only on the computer that runs Rclone. No Google Drive data is sent to this website or to any server operated by the Auralis project.</p>
+      <p><strong>Sharing.</strong> Data accessed by the integration is not sold, transferred or shared with third parties. It is processed only by Google, as the Google Drive provider, and by Rclone running locally.</p>
+      <p><strong>Removal and revocation.</strong> The owner can delete the backup files in Google Drive and revoke the authorization at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+      <p><strong>This website.</strong> This is a static site with no forms, no first-party cookies and no analytics. The hosting provider may log technical access data under its own policies.</p>
+      <p><strong>Changes.</strong> Changes to this policy will be posted on this page with the update date.</p>
+      <p><strong>Contact.</strong> Questions about this OAuth integration or this privacy policy can be sent to <a href="mailto:auralisgame@gmail.com">auralisgame@gmail.com</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap"><a href="../">Sobre a integração</a> · <a href="../../">Auralis</a></div></footer>
+</body>
+</html>

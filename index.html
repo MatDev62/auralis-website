@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auralis</title>
+<meta name="description" content="Auralis é um jogo de aventura single-player em desenvolvimento.">
+<style>
+  :root {
+    --bg: #f6f4ef; --fg: #1d1f24; --muted: #5d6270; --line: #d9d5cb; --accent: #2f5d62;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14161a; --fg: #e8e6e1; --muted: #9da2ad; --line: #2c3038; --accent: #8fc1c4; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  .wrap { width: 100%; max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  header { padding-block: 1.5rem; border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .brand { font-weight: 600; letter-spacing: .18em; text-transform: uppercase; font-size: .9rem; }
+  main { flex: 1; padding-block: 4rem 3rem; }
+  h1 { font-size: clamp(2.4rem, 7vw, 3.6rem); font-weight: 300; letter-spacing: .06em; margin: 0 0 .5rem; }
+  .tagline { color: var(--muted); font-size: 1.1rem; margin: 0 0 2.5rem; }
+  .status {
+    display: inline-block; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase;
+    border: 1px solid var(--line); border-radius: 999px; padding: .2rem .8rem; color: var(--muted);
+  }
+  section { margin-top: 3rem; }
+  h2 { font-size: 1rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 .75rem; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--line); padding-block: 1.25rem; font-size: .85rem; color: var(--muted); }
+  footer .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="brand">Auralis</span>
+    <span class="status">Em desenvolvimento</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Auralis</h1>
+    <p class="tagline">Um jogo de aventura single-player em desenvolvimento.</p>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Auralis é um projeto independente de aventura para um jogador, ainda em fase de desenvolvimento. Mais informações serão publicadas aqui à medida que o projeto avançar.</p>
+    </section>
+
+    <!-- Seções futuras (imagens, trailer, link oficial da Steam) entram aqui somente quando houver material aprovado.
+    <section id="midia">
+      <h2>Imagens e trailer</h2>
+    </section>
+    <section id="onde-jogar">
+      <h2>Onde jogar</h2>
+    </section>
+    -->
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Auralis</span>
+    <a href="backup-oauth/">Integração de backup (rclone)</a>
+  </div>
+</footer>
+</body>
+</html>

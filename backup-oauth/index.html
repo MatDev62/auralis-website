@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integração de backup (rclone) — Auralis</title>
+<meta name="description" content="Informações sobre a integração pessoal com o Google Drive usada nos backups privados do projeto Auralis.">
+<style>
+  :root { --bg: #f6f4ef; --fg: #1d1f24; --muted: #5d6270; --line: #d9d5cb; --accent: #2f5d62; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14161a; --fg: #e8e6e1; --muted: #9da2ad; --line: #2c3038; --accent: #8fc1c4; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { width: 100%; max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  header { padding-block: 1.5rem; border-bottom: 1px solid var(--line); }
+  header a { font-weight: 600; letter-spacing: .18em; text-transform: uppercase; font-size: .9rem; color: var(--fg); text-decoration: none; }
+  main { padding-block: 2.5rem 3rem; }
+  h1 { font-size: 1.9rem; font-weight: 400; margin: 0 0 1.5rem; line-height: 1.25; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .5rem; }
+  a { color: var(--accent); }
+  code { font-size: .92em; background: color-mix(in srgb, var(--line) 55%, transparent); padding: .05rem .35rem; border-radius: 4px; overflow-wrap: anywhere; }
+  .note { border-left: 3px solid var(--accent); padding: .25rem 0 .25rem 1rem; color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  footer { border-top: 1px solid var(--line); padding-block: 1.25rem; font-size: .85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="../">Auralis</a></div></header>
+
+<main>
+  <div class="wrap">
+    <h1>Integração de backup com o Google Drive (aplicativo OAuth “rclone”)</h1>
+
+    <p>Esta página descreve o aplicativo OAuth chamado <strong>“rclone”</strong>, registrado pelo responsável pelo projeto Auralis para uso pessoal. Ele permite que o programa de código aberto <a href="https://rclone.org/">Rclone</a>, executado no computador do próprio responsável, grave e leia cópias de segurança privadas do projeto na conta Google Drive desse mesmo responsável.</p>
+
+    <p class="note">O Rclone é um software independente, desenvolvido e mantido por seus próprios autores. Esta integração não é um produto do Rclone, não foi criada pelos desenvolvedores do Rclone e não tem vínculo oficial com eles. O nome do aplicativo apenas identifica o programa que utiliza a autorização.</p>
+
+    <h2>Finalidade</h2>
+    <p>Armazenar no Google Drive do responsável os backups privados dos arquivos de desenvolvimento do Auralis. A integração não é oferecida ao público e não se destina a outros usuários.</p>
+
+    <h2>Acesso solicitado</h2>
+    <p>A integração solicita somente o escopo <code>https://www.googleapis.com/auth/drive.file</code>. Com ele, o acesso fica limitado aos arquivos e pastas criados por este aplicativo, ou abertos e compartilhados explicitamente com ele. Não há acesso ao restante do conteúdo do Google Drive.</p>
+
+    <h2>Como funciona</h2>
+    <p>A autorização é concedida pelo próprio responsável na tela de consentimento do Google. As credenciais resultantes ficam somente no computador em que o Rclone é executado. Este site não recebe, processa nem armazena dados do Google Drive.</p>
+
+    <h2>Política de privacidade</h2>
+    <p>Consulte a <a href="privacy/">política de privacidade da integração</a>.</p>
+
+    <hr>
+
+    <h2 lang="en">English summary</h2>
+    <p lang="en">“rclone” is a personal OAuth application registered by the owner of the Auralis project. It lets the open-source <a href="https://rclone.org/">Rclone</a> program, running on the owner’s own computer, store private backups of the project in the owner’s own Google Drive. It requests only the <code>drive.file</code> scope, which limits access to files created by, opened with, or shared with this application. It is not offered to the public. Rclone is independent software; this integration is not affiliated with or endorsed by the Rclone developers. See the <a href="privacy/">privacy policy</a>.</p>
+  </div>
+</main>
+
+<footer><div class="wrap">Página informativa da integração de backup do projeto Auralis.</div></footer>
+</body>
+</html>
